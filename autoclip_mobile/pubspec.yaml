@@ -1,0 +1,39 @@
+name: autoclip_mobile
+description: "Offline AI Video Clipper for Mobile — 0 API keys required."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # High-performance native FFmpeg build with libass for ASS subtitle burning & cropping
+  ffmpeg_kit_flutter_full_gpl: ^6.0.3
+  # On-device Whisper STT engine (whisper.cpp binding)
+  whisper_flutter_plus: ^0.1.2
+  # Media & File Pickers
+  image_picker: ^1.1.2
+  file_picker: ^8.1.2
+  # Video Playback & Gallery Export
+  video_player: ^2.9.2
+  gal: ^2.3.1
+  # System & Utilities
+  path_provider: ^2.1.4
+  permission_handler: ^11.3.1
+  provider: ^6.1.2
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+    - assets/fonts/
